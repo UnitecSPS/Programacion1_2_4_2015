@@ -15,7 +15,7 @@ public class Empleado {
     public int codigo, edad;  
     public String nombre;
     public double salario;
-    public   Departamento depto;
+    public Departamento depto;
     
     //2- CONSTRUCTOR-----------------------------------
     

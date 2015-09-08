@@ -19,7 +19,6 @@ public class EmpleadoTest {
         Empleado e1=new Empleado();
         Empleado e2=new Empleado();
         
-        
         e1.codigo = 1;
         e1.nombre = "Lourdes";
         e2.codigo = 2;
