@@ -11,4 +11,9 @@
 public class Departamento {
     public int numero;
     public String nombre;
+    
+    public Departamento(int n, String no){
+        numero = n;
+        nombre = no;
+    }
 }
