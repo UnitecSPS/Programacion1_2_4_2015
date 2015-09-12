@@ -28,5 +28,15 @@ public class Matematica {
         int num = rd.nextInt(9)+1;
         Factorial fact = new Factorial(num);
         
+        //--Estadistica
+        Estadistica est = new Estadistica(10);
+        est.llenar();
+        est.print();
+        double suma = est.suma();
+        System.out.println("Suma: "+suma);
+        if( est.search(9.0) )
+            System.out.println("Encontre el 9!");
+        System.out.println("Promedio: "  + est.promedio());
+        
     }
 }
