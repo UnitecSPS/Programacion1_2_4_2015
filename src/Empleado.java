@@ -12,10 +12,10 @@ public class Empleado {
     //1- ATRIBUTOS-----------------------------------
     
     /*FORMATO: identificador_acceso* tipo_de_dato id;*/
-    public int codigo, edad;  
-    public String nombre;
-    public double salario;
-    public Departamento depto;
+    private int codigo, edad;  
+    private String nombre;
+    private double salario;
+    private Departamento depto;
     
     //2- CONSTRUCTOR-----------------------------------
     public Empleado(){
@@ -38,4 +38,59 @@ public class Empleado {
     }
     
     //3- FUNCIONES
+    
+    public void setNombre(String n){
+        nombre = n;
+    }
+    
+    public void setEdad(int e){
+        edad = e;
+    }
+    
+    public void setDepartamento(Departamento d){
+        depto = d;
+    }
+    
+    public void setSalario(double s){
+        salario = s;
+    }
+    
+    /*
+    FORMATO:
+       return EXPR;
+    
+    REGLAS DE GOCHEZ:
+        1- SIEMPRE retornar de acuerdo al tipo
+        2- SIEMPRE retornar algo
+        3- NUNCA poner codigos inmediatamente despues
+           de un return
+    */
+    public int getCodigo(){
+        return codigo;
+    } 
+    
+    public int getEdad(){
+        if( edad < 0 )
+            return 0;
+        return edad;
+        //System.out.println("Ya retorne la edad");
+    }
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public Departamento getDepartamento(){
+        return depto;
+    }
+    
+    public double getSalario(){
+        return salario;
+    }
+    
+    public void print(){
+         System.out.println("Codigo: "+codigo+"-"+nombre+"-Lps."+
+                salario+"-"+depto.getNombre());
+       
+    }
 }
