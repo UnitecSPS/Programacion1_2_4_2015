@@ -9,11 +9,17 @@
  * @author Aula
  */
 public class Departamento {
-    public int numero;
-    public String nombre;
+    private int numero;
+    private String nombre;
     
     public Departamento(int n, String no){
         numero = n;
         nombre = no;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+    
+    
 }
