@@ -28,6 +28,7 @@ public class Empleado {
         System.out.println("Se llamo el (int-String)");
     }
     
+    //3- FUNCIONES
     public Empleado(int c, String n, double s){
         System.out.println("Se llamo el (int-String-double)");
         codigo = c;
@@ -73,9 +74,9 @@ public class Empleado {
         if( edad < 0 )
             return 0;
         return edad;
-        //System.out.println("Ya retorne la edad");
+        
     }
-    
+
     public String getNombre(){
         return nombre;
     }
@@ -92,5 +93,9 @@ public class Empleado {
          System.out.println("Codigo: "+codigo+"-"+nombre+"-Lps."+
                 salario+"-"+depto.getNombre());
        
+    }
+    
+    public double pago(){
+        return salario - (salario*0.035);
     }
 }

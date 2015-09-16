@@ -33,6 +33,8 @@ public class Estadistica {
     
     public void print(){
         for(int  p=0;p < numeros.length; p++){
+            //if(p==5)
+              // return;
             System.out.print("["+numeros[p]+"]");
         }
         System.out.println("\n");
@@ -43,7 +45,11 @@ public class Estadistica {
      * @return 
      */
     public double suma(){
-        return 0;
+        double sum=0;
+        for(int  p=0;p < numeros.length; p++){
+            sum += numeros[p];
+        }
+        return sum;
     }
     
     /**
@@ -53,6 +59,10 @@ public class Estadistica {
      * @return 
      */
     public boolean search(double valor){
+        for(double num : numeros){
+            if(num == valor)
+                return true;
+        }
         return false;
     }
     
@@ -61,6 +71,6 @@ public class Estadistica {
      * @return 
      */
     public double promedio(){
-        return 0;
+        return suma()/numeros.length;
     }
 }
