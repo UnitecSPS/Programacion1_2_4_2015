@@ -28,5 +28,15 @@ public class EmpleadoTest {
                 e1.getSalario()+"-"+e1.getDepartamento().getNombre());
         e2.print();
         e3.print();
+        
+        //test el atributo estatico 
+        System.out.println("Version: " + Empleado.VERSION);
+        e1.VERSION = 5;
+        System.out.println("Version: " + Empleado.VERSION);
+        System.out.println("Version: " + e1.VERSION);
+        System.out.println("Version: " + e2.VERSION);
+        System.out.println("Version: " + e3.VERSION);
+        Empleado.VERSION = 10;
+        System.out.println("Version: " + e1.VERSION);
     }
 }

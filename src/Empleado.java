@@ -16,6 +16,8 @@ public class Empleado {
     private String nombre;
     private double salario;
     private Departamento depto;
+    //atributo estatico o a nivel de clase
+    public static int VERSION = 3;
     
     //2- CONSTRUCTOR-----------------------------------
     public Empleado(){
