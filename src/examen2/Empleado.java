@@ -46,8 +46,7 @@ public class Empleado {
     }
     
     public double pago(int mes){
-        return salario + comision(mes) +
-                (salario*0.035);
+        return salario + comision(mes) - (salario*0.035);
     }
     
     public double ventas(){
